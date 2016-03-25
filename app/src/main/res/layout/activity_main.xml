@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nazanin.doodler.MainActivity"
+    android:background="#FF000000">
+
+    <com.example.nazanin.doodler.DrawingView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/drawing"
+        android:layout_alignParentTop="true"
+        android:longClickable="true"
+        android:layout_alignRight="@+id/gridLayout"
+        android:layout_alignEnd="@+id/gridLayout"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="40dp"
+        android:background="#FFFFFFFF" />
+
+    <GridLayout
+        android:layout_width="20dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gridLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp">
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/NAVY"
+            android:onClick="onColorButtonClick"
+            android:layout_row="0"
+            android:background="#FF0074D9"
+            android:layout_column="0" />  />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/AQUA"
+            android:onClick="onColorButtonClick"
+            android:layout_row="1"
+            android:background="#FF7FDBFF"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/TEAL"
+            android:onClick="onColorButtonClick"
+            android:layout_row="2"
+            android:background="#FF39CCCC"
+            android:layout_column="0" /> />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/OLIVE"
+            android:onClick="onColorButtonClick"
+            android:layout_row="3"
+            android:background="#FF3D9970"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/GREEN"
+            android:onClick="onColorButtonClick"
+            android:layout_row="4"
+            android:background="#FF2ECC40"
+            android:layout_column="0" /> />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/LIME"
+            android:onClick="onColorButtonClick"
+            android:layout_row="5"
+            android:background="#FF01FF70"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/YELLOW"
+            android:onClick="onColorButtonClick"
+            android:layout_row="6"
+            android:background="#FFFFDC00"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ORANGE"
+            android:onClick="onColorButtonClick"
+            android:layout_row="7"
+            android:background="#FFFF851B"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/RED"
+            android:onClick="onColorButtonClick"
+            android:layout_row="8"
+            android:background="#FFFF1112"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/MAROON"
+            android:onClick="onColorButtonClick"
+            android:layout_row="9"
+            android:background="#FF85144b"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/FUCHSIA"
+            android:onClick="onColorButtonClick"
+            android:layout_row="10"
+            android:background="#FFF012BE"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/PURPLE"
+            android:onClick="onColorButtonClick"
+            android:layout_row="11"
+            android:background="#FFB10DC9"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/BLACK"
+            android:onClick="onColorButtonClick"
+            android:layout_row="12"
+            android:background="#FF111111"
+            android:layout_column="0" /> 
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/DARKGRAY"
+            android:onClick="onColorButtonClick"
+            android:layout_row="13"
+            android:background="#FF444444"
+            android:layout_column="0" /> 
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/GRAY"
+            android:onClick="onColorButtonClick"
+            android:layout_row="14"
+            android:background="#FF777777"
+            android:layout_column="0" /> 
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/LIGHTGRAY"
+            android:onClick="onColorButtonClick"
+            android:layout_row="15"
+            android:background="#FFAAAAAA"
+            android:layout_column="0" /> 
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/SILVER"
+            android:onClick="onColorButtonClick"
+            android:layout_row="16"
+            android:background="#FFDDDDDD"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/WHITE"
+            android:onClick="onColorButtonClick"
+            android:layout_row="17"
+            android:background="#FFFFFFFF"
+            android:layout_column="0" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:text="Thin"
+            android:id="@+id/thin"
+            android:tag="thin"
+            android:onClick="onThicknessButtonClick"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:text="Med"
+            android:id="@+id/medium"
+            android:tag="medium"
+            android:onClick="onThicknessButtonClick"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:text="Thick"
+            android:id="@+id/thick"
+            android:tag="thick"
+            android:onClick="onThicknessButtonClick"
+            android:layout_row="0"
+            android:layout_column="2" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:text="Undo"
+            android:id="@+id/undo"
+            android:onClick="undo"
+            android:layout_row="0"
+            android:layout_column="3" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:text="Save"
+            android:id="@+id/save"
+            android:layout_row="0"
+            android:layout_column="4" />
+    </GridLayout>
+</RelativeLayout>
